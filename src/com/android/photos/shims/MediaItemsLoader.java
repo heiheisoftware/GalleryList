@@ -138,17 +138,6 @@ public class MediaItemsLoader extends AsyncTaskLoader<Cursor> implements LoaderC
             mMediaItems = mediaItems;
         }
         return cursor;
-        
-//        Cursor cursor = getContext().getContentResolver().query(
-//                Images.Media.EXTERNAL_CONTENT_URI, new String[]{
-//                        Images.Media._ID,
-//                        Images.Media.DATA,
-//                        Images.Media.DATE_ADDED,
-//                        Images.Media.HEIGHT,
-//                        Images.Media.WIDTH,
-//                        Images.Media.MIME_TYPE
-//                }, null, null, null);
-//        return cursor;
     }
 
     @Override

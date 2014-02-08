@@ -52,10 +52,10 @@ public class GalleryActivity extends Activity implements MultiChoiceManager.Prov
         ab.setDisplayShowTitleEnabled(false);
 
         mTabsAdapter = new TabsAdapter(this, mViewPager);
-        mTabsAdapter.addTab(ab.newTab().setText(R.string.tab_photos),
+        mTabsAdapter.addTab(ab.newTab().setText("photo 2"),
+                PhotoSetFragment2.class, null);
+        mTabsAdapter.addTab(ab.newTab().setText("photo 1"),
                 PhotoSetFragment.class, null);
-//        mTabsAdapter.addTab(ab.newTab().setText(R.string.tab_albums),
-//                AlbumSetFragment.class, null);
 
         if (savedInstanceState != null) {
             ab.setSelectedNavigationItem(savedInstanceState.getInt("tab", 0));
