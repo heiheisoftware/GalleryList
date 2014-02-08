@@ -1,0 +1,19 @@
+
+#.gitignore
+
+### for eclipse
+#.classpath
+#.project
+
+# win 
+bin\
+gen\
+# *nix like
+bin/
+gen/
+
+# for java
+*.class
+
+# for mac
+.DS_Store
